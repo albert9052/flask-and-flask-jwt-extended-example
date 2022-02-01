@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    <title>flask + flask_jwt_extended example</title>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"></link>
+  </head>
+  <body>
+    <h1>flask + flask_jwt_extended example</h1>
+    <button type="button" onclick="login()" id="login-button">LOGIN</button>
+    <button type="button" onclick="logout()" id="logout-button">LOGOUT</button>
+    <button type="button" onclick="protected()" id="protected-button">PROTECTED?</button>
+    <button type="button" onclick="moreProtected()" id="more-protected-button">MORE PROTECTED?</button>
+  </body>
+</html>
