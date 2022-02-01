@@ -30,7 +30,7 @@ function protected() {
 }
 
 function moreProtected() {
-	fetch("./protected", {
+	fetch("./more-protected", {
 	}).then(res => res.json())
 		.catch(error => console.error("Error", error))
 		.then(response => console.log("Success", response));
