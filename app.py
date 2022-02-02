@@ -25,7 +25,11 @@ app = Flask(__name__)
 JWT_LOGOUT_ACCESS_TOKEN_EXPIRES = timedelta(seconds=3)
 JWT_LOGOUT_REFRESH_TOKEN_EXPIRES = timedelta(seconds=3)
 
-app.config["JWT_SECRET_KEY"] = "cliNIC_super_super_super_secret_key"
+
+# WARNING THIS SHOULD BE CHANGED. THE LINE BELOW SHOULD BE CHANGED. 
+
+
+app.config["JWT_SECRET_KEY"] = "super-key" # This should be changed. 
 app.config["JWT_TOKEN_LOCATION"] = ["cookies"]
 app.config["JWT_COOKIE_SECURE"] = True # Should be True in production. 
 app.config["JWT_COOKIE_SAMESITE"] = "Strict" # It can be Strict, Lax, and None (default). However, most browsers nowaday see None as Lax. 
